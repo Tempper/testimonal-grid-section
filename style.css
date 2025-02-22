@@ -105,7 +105,7 @@ body {
   color: #48556a;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
   .testimonials-grid {
     grid-template-areas:
       "daniel daniel"
