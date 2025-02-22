@@ -38,11 +38,11 @@ body {
 .testimonials-grid {
   display: grid;
   grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
   grid-template-areas:
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
-  padding: 230px;
-  margin: auto;
+  margin: 165px 218px 218px 165px;
 }
 
 .testimonials-grid .item {
