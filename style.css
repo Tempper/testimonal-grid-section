@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Barlow Semi Condensed;
+}
+body {
+  background-color: #f6f5f6;
+}
+.name h1 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14.3px;
+  letter-spacing: 0px;
+}
+.name p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12.1px;
+  letter-spacing: 0px;
+}
+
+.top-content {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding: 1rem 0;
+}
+
+.bottom-content {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18.2px;
+  letter-spacing: 0px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  padding: 230px;
+  margin: auto;
+}
+
+.testimonials-grid .item {
+  padding: 2rem;
+  margin: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 40px 60px 50px -47px #48556a3f;
+}
+.testimonials-grid .item .person img {
+  border-radius: 100%;
+}
+.person {
+  display: flex;
+  gap: 1rem;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.person img {
+  max-width: 28px;
+  max-height: 28px;
+}
+
+.testimonials-grid .item:nth-child(1) {
+  position: relative;
+  grid-area: daniel;
+  background-color: #733fc8;
+  color: white;
+}
+.testimonials-grid .item:nth-child(1) img {
+  border: 2px solid #a775f1;
+}
+.testimonials-grid .item:nth-child(2) {
+  position: relative;
+  grid-area: jonathan;
+  background-color: #48556a;
+  color: white;
+}
+.testimonials-grid .item:nth-child(3) {
+  position: relative;
+  grid-area: jeanette;
+  background-color: #ffffff;
+  color: #48556a;
+}
+.testimonials-grid .item:nth-child(4) {
+  position: relative;
+  grid-area: patrick;
+  background-color: #19202d;
+  color: #cfcfcf;
+}
+.testimonials-grid .item:nth-child(4) img {
+  border: 2px solid #a775f1;
+}
+.testimonials-grid .item:nth-child(5) {
+  position: relative;
+  grid-area: kira;
+  background-color: #ffffff;
+  color: #48556a;
+}
+
+@media (max-width: 1440px) {
+  .testimonials-grid {
+    grid-template-areas:
+      "daniel daniel"
+      "jonathan jeanette"
+      "patrick patrick"
+      "kira kira";
+    padding: 83px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-rows: 246px;
+    grid-template-areas:
+      "daniel"
+      "daniel"
+      "jonathan"
+      "jeanette"
+      "patrick"
+      "patrick"
+      "kira"
+      "kira";
+    padding: 73px 0;
+  }
+}
